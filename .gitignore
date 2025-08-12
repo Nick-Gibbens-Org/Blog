@@ -1,0 +1,16 @@
+# Ignore the Jekyll build output
+_site/
+
+# Ignore build cache
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore any Ruby/Bundler local install folders
+.bundle/
+
+# Ignore log files
+*.log
+
+# Ignore system files (just in case)
+.DS_Store
+Thumbs.db

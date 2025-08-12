@@ -10,4 +10,7 @@ services:
       - .:/srv/jekyll
     environment:
       - JEKYLL_ENV=development
-    command: jekyll serve --host 0.0.0.0 --livereload
+    command: >
+      bash -c "bundle install &&
+               bundle add rexml &&
+               jekyll serve --host 0.0.0.0 --watch --force_polling"
