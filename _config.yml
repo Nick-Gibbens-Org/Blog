@@ -18,8 +18,8 @@ defaults:
     values:
       layout: "default"
 
-url: ""
-# baseurl: "/Jekyll-Theme"
+url: "https://sandstormnick.github.io/"
+baseurl: "/Jekyll-Theme"
 
 exclude:
   - docker-compose.yml
