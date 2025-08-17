@@ -18,7 +18,8 @@ defaults:
     values:
       layout: "default"
 
-baseurl: "/Jekyll-Theme"
+url: ""
+# baseurl: "/Jekyll-Theme"
 
 exclude:
   - docker-compose.yml
