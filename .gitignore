@@ -14,3 +14,6 @@ _site/
 # Ignore system files (just in case)
 .DS_Store
 Thumbs.db
+
+# Ignore Visual Studio Code files
+.vscode

@@ -2,15 +2,17 @@ version: '3.8'
 
 services:
   jekyll:
-    image: jekyll/jekyll:4.0
+    image: ruby:3.1
     container_name: jekyll-site
     ports:
       - "4000:4000"
     volumes:
       - .:/srv/jekyll
+    working_dir: /srv/jekyll
     environment:
       - JEKYLL_ENV=development
     command: >
-      bash -c "bundle install &&
+      bash -c "gem install jekyll bundler &&
+               bundle install &&
                bundle add rexml &&
                jekyll serve --host 0.0.0.0 --watch --force_polling"
