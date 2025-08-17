@@ -17,3 +17,6 @@ Thumbs.db
 
 # Ignore Visual Studio Code files
 .vscode
+
+# Ignore Gemfile.lock
+Gemfile.lock

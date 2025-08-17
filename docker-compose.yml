@@ -3,7 +3,7 @@ version: '3.8'
 services:
   jekyll:
     image: ruby:3.1
-    container_name: jekyll-site
+    container_name: jekyll-theme
     ports:
       - "4000:4000"
     volumes:
