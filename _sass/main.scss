@@ -3,5 +3,20 @@
 }
 
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
+}
+
+@font-face {
+  font-family: 'Acorn';
+  src: url('../fonts/acorn.woff');
+}
+
+@font-face {
+  font-family: 'gt';
+  src: url('../fonts/gt.woff');
+}
+
+h1 {
+  font-family: 'Acorn';
+  color: var(--color-text-primary);
 }
