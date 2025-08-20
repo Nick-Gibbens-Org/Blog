@@ -19,7 +19,7 @@ defaults:
       layout: "default"
 
 url: "https://sandstormnick.github.io/"
-baseurl: "/Jekyll-Theme"
+baseurl: "/Jekyll-Theme-Verdant"
 
 exclude:
   - docker-compose.yml
