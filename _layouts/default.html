@@ -5,21 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <script>
-  (function() {
-    // Check sessionStorage for saved theme
-    var savedTheme = sessionStorage.getItem("theme");
-
-    if (!savedTheme) {
-      // No theme saved yet, fall back to system preference
-      savedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-
-    console.log(savedTheme);
-    // Apply theme immediately
-    document.documentElement.setAttribute("data-theme", savedTheme);
-  })();
-</script>
+    <script src="{{ "/assets/js/theme-init.js" | prepend: site.baseurl }}"></script>
     <link rel="stylesheet" href={{ "/assets/css/styles.css" | prepend: site.baseurl }}>
     <script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
   </head>
