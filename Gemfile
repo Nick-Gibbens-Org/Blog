@@ -13,6 +13,7 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-feed', '~> 0.6'
 gem "minima", "~> 2.0"
+gem "bootstrap", "~> 5.3"
 
 # For GitHub Pages compatibility (uncomment if deploying to GitHub Pages)
 # gem "github-pages", group: :jekyll_plugins

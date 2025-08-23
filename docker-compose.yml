@@ -8,6 +8,7 @@ services:
       - "4000:4000"
     volumes:
       - .:/srv/jekyll
+      - bundle:/usr/local/bundle
     working_dir: /srv/jekyll
     environment:
       - JEKYLL_ENV=development
@@ -16,3 +17,6 @@ services:
                bundle install &&
                bundle add rexml &&
                jekyll serve --host 0.0.0.0 --watch --force_polling"
+
+volumes:
+  bundle:
