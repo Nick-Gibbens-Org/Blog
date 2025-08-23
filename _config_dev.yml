@@ -1,3 +1,29 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+url: "https://sandstormnick.github.io/"
+baseurl: "/Jekyll-Theme-Verdant"
+
+exclude:
+  - docker-compose.yml
+
 sass:
   quiet_deps: true
   load_paths:
