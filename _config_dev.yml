@@ -1,0 +1,4 @@
+sass:
+  quiet_deps: true
+  load_paths:
+    - /usr/local/bundle/gems/bootstrap-5.3.5/assets/stylesheets

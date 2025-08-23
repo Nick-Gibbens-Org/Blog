@@ -16,7 +16,7 @@ services:
       bash -c "gem install jekyll bundler &&
                bundle install &&
                bundle add rexml &&
-               jekyll serve --host 0.0.0.0 --watch --force_polling"
+               jekyll serve --config _config.yml,_config_dev.yml --host 0.0.0.0 --watch --force_polling"
 
 volumes:
   bundle:
