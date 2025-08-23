@@ -43,10 +43,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Debug gem paths
-        run: |
-          bundle show bootstrap
-          find /opt/hostedtoolcache -name "bootstrap*" -type d 2>/dev/null | head -10
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --config _config.yml --baseurl "${{ steps.pages.outputs.base_path }}"

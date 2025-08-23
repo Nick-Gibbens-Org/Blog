@@ -26,3 +26,5 @@ exclude:
 
 sass:
   quiet_deps: true
+  load_paths:
+    - vendor/bundle
