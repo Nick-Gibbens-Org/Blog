@@ -1,6 +1,5 @@
 [data-theme="light"] {
     --background-color: hsla(36, 31%, 90%, 1);
-    --sidebar-background-color: hsla(36, 31%, 80%, 1);
 
     --color-active-link: hsla(0, 0%, 100%, .5);
 
@@ -14,11 +13,13 @@
     --color-text-primary-50: hsla(172, 95%, 18%, 0.5);
 
     --overlay-background-color: rgba(255, 255, 255, 0.7);
+
+    --sidebar-background-color: hsla(36, 31%, 80%, 1);
+    --sidebar-nav-link-active: hsla(36, 31%, 90%, 1);
 }
 
 [data-theme="dark"] {
     --background-color: hsla(158, 23%, 18%, 1);
-    --sidebar-background-color: hsla(158, 35%, 18%, 1);
 
     --color-active-link: hsla(160, 52%, 71%, .1);
 
@@ -32,4 +33,7 @@
     --color-text-primary-50: hsla(160, 52%, 71%, .5);
 
     --overlay-background-color: rgba(0, 0, 0, 0.5);
+
+    --sidebar-background-color: hsla(158, 35%, 18%, 1);
+    --sidebar-nav-link-active: hsla(158, 23%, 18%, 1);
 }

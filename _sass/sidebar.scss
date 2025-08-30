@@ -3,3 +3,17 @@
     position: fixed;
     width: 150px;
 }
+
+#verdant-sidebar>ul>li>a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: bold;
+}
+
+#verdant-sidebar>ul>li>a.active {
+    background-color: var(--sidebar-nav-link-active);
+}
+
+.sidebar-hr {
+    border: 1px solid;
+}

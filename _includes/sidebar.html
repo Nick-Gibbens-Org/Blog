@@ -1,14 +1,14 @@
 <div id="verdant-sidebar" class="d-flex flex-column p-3 vh-100">
     Hello
-    <hr>
+    <hr class="sidebar-hr">
     <ul class="nav nav-pills flex-column mb-auto">
         {% for item in site.data.navigation %}
         <li class="nav-item">
-            <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %} {{"active"}} {% endif %}">
+            <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}{{"active"}}{% endif %}">
                 {{ item.name }}
             </a>
         </li>
         {% endfor %}
     </ul>
-    <hr>
+    <hr class="sidebar-hr">
 </div>
