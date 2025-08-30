@@ -1,5 +1,6 @@
 [data-theme="light"] {
     --background-color: hsla(36, 31%, 90%, 1);
+    --sidebar-background-color: hsla(36, 31%, 80%, 1);
 
     --color-active-link: hsla(0, 0%, 100%, .5);
 
@@ -17,6 +18,7 @@
 
 [data-theme="dark"] {
     --background-color: hsla(158, 23%, 18%, 1);
+    --sidebar-background-color: hsla(158, 35%, 18%, 1);
 
     --color-active-link: hsla(160, 52%, 71%, .1);
 

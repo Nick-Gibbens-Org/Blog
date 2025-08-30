@@ -10,8 +10,12 @@
     <script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
   </head>
   <body>
-    {% include navigation.html %}
-    <div class="container">
+    {% if page.show_sidebar %}
+        {% include sidebar.html %}
+    {% else %}
+        {% include navigation.html %}
+    {% endif %}
+    <div class="verdant-content p-3">
         {{ content }}
     </div>
   </body>
