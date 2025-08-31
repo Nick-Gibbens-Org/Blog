@@ -14,6 +14,16 @@
     background-color: var(--sidebar-nav-link-active);
 }
 
+#verdant-connection-links>a {
+    color: var(--color-text-primary);
+    font-size: x-large;
+    margin-right: 0.5rem;
+}
+
+#verdant-connection-links>a:hover {
+    color: var(--sidebar-connection-link-hover);
+}
+
 .sidebar-hr {
     border: 1px solid;
 }

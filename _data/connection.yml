@@ -1,0 +1,11 @@
+- name: github
+  icon: "fab fa-github"
+  url: "https://github.com/SandstormNick/Jekyll-Theme-Verdant"
+
+- name: linkedin
+  icon: "fab fa-linkedin"
+  url: "#"
+
+- name: twitter
+  icon: "fab fa-x-twitter"
+  url: "#"
