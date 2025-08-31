@@ -1,5 +1,20 @@
-<div id="verdant-sidebar" class="d-flex flex-column p-3 vh-100">
-    Hello
+<div id="verdant-sidebar" class="d-flex flex-column vh-100">
+    <div id="verdant-profile-header" class="d-flex">
+        <a href="{{ '/' | relative_url }}" id="verdant-avatar" class="rounded-circle">
+            <img src="{{ '/assets/images/leaf.png' | relative_url }}" alt="">
+        </a>
+    </div>
+    <div id="blog-name" class="d-flex">
+        <h2>
+            Verdant
+        </h2>
+    </div>
+    <div id="blog-description" class="d-flex">
+        <p class="fst-italic">
+            A lush, green Jekyll Theme.
+        </p>
+    </div>
+
     <hr class="sidebar-hr">
     <ul class="nav nav-pills flex-column mb-auto">
         {% for item in site.data.navigation %}

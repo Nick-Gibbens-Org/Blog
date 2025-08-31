@@ -3,12 +3,13 @@
 }
 
 .verdant-content {
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
 body {
   background-color: var(--background-color);
-  color: var(--color-text-primary)
+  color: var(--color-text-primary);
+  font-family: var(--bs-body-font-family);
 }
 
 h1 {

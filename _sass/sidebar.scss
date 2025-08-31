@@ -1,7 +1,8 @@
 #verdant-sidebar {
     background-color: var(--sidebar-background-color);
     position: fixed;
-    width: 150px;
+    width: 250px;
+    padding: 1rem 2rem;
 }
 
 #verdant-sidebar>ul>li>a {
@@ -14,6 +15,10 @@
     background-color: var(--sidebar-nav-link-active);
 }
 
+#verdant-connection-links {
+    justify-content: center;
+}
+
 #verdant-connection-links>a {
     color: var(--color-text-primary);
     font-size: x-large;
@@ -22,6 +27,38 @@
 
 #verdant-connection-links>a:hover {
     color: var(--sidebar-connection-link-hover);
+}
+
+#verdant-profile-header {
+    margin: 8px 0px;
+
+}
+
+#verdant-profile-header>a {
+    box-shadow: var(--sidebar-connection-link-hover) 0 0 0 2px; ;
+    overflow: hidden;
+}
+
+#verdant-profile-header>a>img {
+    background-color: var(--sidebar-nav-link-active);
+    max-width: 100%;
+    height: auto;
+    padding: 8px;
+}
+
+#verdant-avatar {
+    display: block;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+#blog-name>h2 {
+    font-family: 'Acorn';
+    margin-bottom: 0;
+}
+
+#blog-description>p {
+    margin-bottom: 0;
 }
 
 .sidebar-hr {

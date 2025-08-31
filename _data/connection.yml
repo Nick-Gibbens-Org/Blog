@@ -9,3 +9,7 @@
 - name: twitter
   icon: "fab fa-x-twitter"
   url: "#"
+
+- name: stack-overflow
+  icon: "fa-brands fa-stack-overflow"
+  url: "#"

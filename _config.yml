@@ -19,6 +19,7 @@ baseurl: "/Jekyll-Theme-Verdant"
 
 exclude:
   - docker-compose.yml
+  - assets/images/attribution.txt
 
 sass:
   quiet_deps: true
