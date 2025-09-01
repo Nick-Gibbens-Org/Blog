@@ -1,5 +1,6 @@
 [data-theme="light"] {
     --background-color: hsla(36, 31%, 90%, 1);
+    --background-color-inverse: hsla(158, 23%, 18%, 1);
 
     --color-active-link: hsla(0, 0%, 100%, .5);
 
@@ -9,6 +10,7 @@
 
     --color-text-primary: hsla(172, 95%, 18%, 1);
     --color-text-secondary-color: hsla(36, 31%, 90%, 1);
+    --color-text-primary-inverse: hsla(160, 52%, 71%, 1);
 
     --color-text-primary-50: hsla(172, 95%, 18%, 0.5);
 
@@ -21,6 +23,7 @@
 
 [data-theme="dark"] {
     --background-color: hsla(158, 23%, 18%, 1);
+    --background-color-inverse: hsla(36, 31%, 90%, 1);
 
     --color-active-link: hsla(160, 52%, 71%, .1);
 
@@ -30,6 +33,7 @@
 
     --color-text-primary: hsla(160, 52%, 71%, 1);
     --color-text-secondary-color: hsla(158, 23%, 18%, 1);
+    --color-text-primary-inverse: hsla(172, 95%, 18%, 1);
 
     --color-text-primary-50: hsla(160, 52%, 71%, .5);
 
