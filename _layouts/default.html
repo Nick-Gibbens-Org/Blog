@@ -19,8 +19,11 @@
         {% include navigation.html %}
     {% endif %}
 
-    <div class="verdant-content p-3">
-        {{ content }}
+    <div class="verdant-content p-3 d-flex flex-column vh-100">
+        <div class="row mb-auto">
+            {{ content }}
+        </div>
+        {% include footer.html %}
     </div>
   </body>
 </html>
