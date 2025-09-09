@@ -28,3 +28,32 @@ blockquote>p {
     border-left: solid var(--color-text-primary-50) 2px;
     padding-left: 15px;
 }
+
+#home-posts-list {
+    list-style-type: none;
+}
+
+#home-posts-list a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+#home-posts-list a:hover {
+    color: var(--sidebar-connection-link-hover);
+    border: solid var(--sidebar-connection-link-hover) 1px;
+    border-radius: 6px;
+}
+
+#home-posts-list p {
+    margin-bottom: 0;
+}
+
+#home-posts-list .card {
+    background-color: var(--sidebar-background-color);
+    margin-bottom: 10px;
+    border: 0;
+}
+
+#home-posts-list .fa-thumbtack {
+    margin-left: 10px;
+}
