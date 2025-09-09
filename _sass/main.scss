@@ -29,26 +29,31 @@ blockquote>p {
     padding-left: 15px;
 }
 
-#home-posts-list {
+#home-posts-list,
+#posts-list {
     list-style-type: none;
 }
 
-#home-posts-list a {
+#home-posts-list a,
+#posts-list a {
     text-decoration: none;
     color: var(--color-text-primary);
 }
 
-#home-posts-list a:hover {
+#home-posts-list a:hover,
+#posts-list a:hover {
     color: var(--sidebar-connection-link-hover);
     border: solid var(--sidebar-connection-link-hover) 1px;
     border-radius: 6px;
 }
 
-#home-posts-list p {
+#home-posts-list p,
+#posts-list p {
     margin-bottom: 0;
 }
 
-#home-posts-list .card {
+#home-posts-list .card,
+#posts-list .card {
     background-color: var(--sidebar-background-color);
     margin-bottom: 10px;
     border: 0;
