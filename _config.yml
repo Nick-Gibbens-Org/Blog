@@ -9,7 +9,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-      show_sidebar: true
 
 plugins:
   - jekyll-archives
