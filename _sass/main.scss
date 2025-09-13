@@ -32,14 +32,17 @@ blockquote>p {
 #home-posts-list,
 #posts-list,
 #categories-list,
-#category-list {
+#category-list,
+#tag-list {
     list-style-type: none;
 }
 
 #home-posts-list a,
 #posts-list a,
 #categories-list a,
-#category-list a {
+#category-list a,
+#tags-list a,
+#tag-list a {
     text-decoration: none;
     color: var(--color-text-primary);
 }
@@ -47,7 +50,8 @@ blockquote>p {
 #home-posts-list a:hover,
 #posts-list a:hover,
 #categories-list a:hover,
-#category-list a:hover {
+#category-list a:hover,
+#tag-list a:hover {
     color: var(--sidebar-connection-link-hover);
     border: solid var(--sidebar-connection-link-hover) 1px;
     border-radius: 6px;
@@ -55,14 +59,16 @@ blockquote>p {
 
 #home-posts-list p,
 #posts-list p,
-#category-list p {
+#category-list p,
+#tag-list p {
     margin-bottom: 0;
 }
 
 #home-posts-list .card,
 #posts-list .card,
 #categories-list .card,
-#category-list .card {
+#category-list .card,
+#tag-list .card {
     background-color: var(--sidebar-background-color);
     margin-bottom: 10px;
     border: 0;
@@ -70,4 +76,20 @@ blockquote>p {
 
 #home-posts-list .fa-thumbtack {
     margin-left: 10px;
+}
+
+.tag-pill {
+    background-color: forestgreen;
+    border-radius: 15px;
+    color: var(--background-color);
+    margin: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+
+a:hover .tag-pill {
+    color: var(--sidebar-connection-link-hover);
+    border: solid var(--background-color-inverse) 1px;
+    border-radius: 15px;
 }

@@ -7,7 +7,6 @@
       savedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
 
-    console.log(savedTheme);
     // Apply theme immediately
     document.documentElement.setAttribute("data-theme", savedTheme);
 })();

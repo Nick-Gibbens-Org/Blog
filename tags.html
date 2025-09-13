@@ -1,0 +1,40 @@
+---
+layout: default
+permalink: /tags
+title: Tags
+---
+
+<h1>Tags</h1>
+
+{% assign sorted_tags = site.tags | sort %}
+
+<div id="tags-list" class="d-flex flex-wrap">
+    {% for tag in sorted_tags %}
+        {% assign tag_name = tag | first %}
+        {% assign tag_size = tag | last | size %}
+        {% capture _tag_url %}/tags/{{ tag_name | slugify | url_encode }}/{% endcapture %}
+        <a href="{{ _tag_url | relative_url }}">
+            <div class="tag-pill">
+                {{ tag_name }}
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const tagPills = document.querySelectorAll(".tag-pill");
+    const count = tagPills.length;
+
+    const colors = [
+        "#025a5a", "#008b8b", "#0b8e7c", "#3c5a02",
+        "#006400", "#228B22", "#2E8B57", "#3CB371",
+        "#66CDAA", "#8FBC8F", "#20B2AA"
+    ];
+
+    tagPills.forEach(pill => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      pill.style.backgroundColor = randomColor;
+    });
+  });
+</script>

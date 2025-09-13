@@ -26,9 +26,12 @@ sass:
     - /home/runner/work/Jekyll-Theme-Verdant/Jekyll-Theme-Verdant/vendor/bundle/ruby/3.1.0/gems/bootstrap-5.3.5/assets/stylesheets
 
 jekyll-archives:
-  enabled: categories
+  enabled:
+    - categories
+    - tags
   layouts:
     category: category
+    tag: tag
   permalinks:
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
