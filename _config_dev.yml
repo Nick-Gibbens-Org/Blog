@@ -4,11 +4,15 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: /posts/:title/
   - scope:
       path: ""
     values:
       layout: "default"
       show_sidebar: true
+
+plugins:
+  - jekyll-archives
 
 url: "https://sandstormnick.github.io/"
 baseurl: "/Jekyll-Theme-Verdant"
@@ -21,3 +25,11 @@ sass:
   quiet_deps: true
   load_paths:
     - /usr/local/bundle/gems/bootstrap-5.3.5/assets/stylesheets
+
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: category
+  permalinks:
+    category: '/categories/:name/'

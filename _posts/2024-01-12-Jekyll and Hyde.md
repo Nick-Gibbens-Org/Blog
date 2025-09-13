@@ -1,4 +1,5 @@
 ---
+categories: [Tutorial]
 excerpt_separator: <!--end_excerpt-->
 post_title: Jekyll and Hyde
 ---

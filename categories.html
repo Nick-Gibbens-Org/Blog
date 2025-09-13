@@ -1,0 +1,23 @@
+---
+layout: default
+title: Categories
+---
+<h1>Categories</h1>
+
+{% assign sorted_categories = site.categories | sort %}
+
+<ul id="categories-list">
+    {% for category in sorted_categories %}
+        {% assign category_name = category | first %}
+        {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
+        <li>
+            <div class="card">
+                <a href="{{ _category_url | relative_url }}">
+                    <div class="card-body">
+                        <h2>{{ category_name }}</h2>
+                    </div>
+                </a>
+            </div>
+        </li>
+    {% endfor %}
+</ul>

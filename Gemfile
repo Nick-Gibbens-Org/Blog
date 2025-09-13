@@ -8,9 +8,7 @@ gem 'rexml'
 gem 'webrick'
 
 # Theme dependencies
-gem 'therubyracer'
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
+gem 'jekyll-archives', '~> 2.3'
 gem 'jekyll-feed', '~> 0.6'
 gem "minima", "~> 2.0"
 gem "bootstrap", "~> 5.3"

@@ -14,7 +14,11 @@
   <body>
     {% include theme-toggle.html %}
 
-    {% if page.show_sidebar %}
+    <!-- The category page.type is created using the Jekyll Archive plugin. It cannot take custom attributes.
+    Therefore you cannot rely on show_sidebar to work for the category layout. -->
+    <!-- It might be easier to drop the show_sidebar logic and manually decide if you want to show either.
+    This isn't set in run time anyway. -->
+    {% if page.show_sidebar or page.type == "category" %}
         {% include sidebar.html %}
     {% else %}
         {% include navigation.html %}

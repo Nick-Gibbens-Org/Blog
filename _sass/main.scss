@@ -30,30 +30,39 @@ blockquote>p {
 }
 
 #home-posts-list,
-#posts-list {
+#posts-list,
+#categories-list,
+#category-list {
     list-style-type: none;
 }
 
 #home-posts-list a,
-#posts-list a {
+#posts-list a,
+#categories-list a,
+#category-list a {
     text-decoration: none;
     color: var(--color-text-primary);
 }
 
 #home-posts-list a:hover,
-#posts-list a:hover {
+#posts-list a:hover,
+#categories-list a:hover,
+#category-list a:hover {
     color: var(--sidebar-connection-link-hover);
     border: solid var(--sidebar-connection-link-hover) 1px;
     border-radius: 6px;
 }
 
 #home-posts-list p,
-#posts-list p {
+#posts-list p,
+#category-list p {
     margin-bottom: 0;
 }
 
 #home-posts-list .card,
-#posts-list .card {
+#posts-list .card,
+#categories-list .card,
+#category-list .card {
     background-color: var(--sidebar-background-color);
     margin-bottom: 10px;
     border: 0;
