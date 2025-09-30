@@ -1,7 +1,8 @@
 ---
+categories: [Demo, How To]
 excerpt_separator: <!--end_excerpt-->
-pinned: true
 post_title: Markdown Syntax
+tags: [Markdown, Syntax]
 ---
 
 Markdown is a lightweight markup language used for creating formatted text using plain text. This post contains all the basic Markdown syntax you will need.
