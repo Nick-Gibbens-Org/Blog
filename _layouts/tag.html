@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<ul id="tag-list">
+  {% for post in page.posts %}
+    <li>
+        <div class="card">
+            <a href="{{ post.url | relative_url }}">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center">
+                            <h2>{{ post.title }}</h2>
+                            <span class="ms-auto">{{ post.date | date: "%-d %B %Y" }}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{ post.excerpt }}
+                    </div>
+                </div>
+            </a>
+        </div>
+    </li>
+  {% endfor %}
+</ul>

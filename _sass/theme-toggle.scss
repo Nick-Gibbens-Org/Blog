@@ -1,0 +1,14 @@
+#theme-toggle {
+    position: absolute;
+    left: 96%;
+    top: 93%;
+}
+
+#theme-toggle>button {
+    background-color: var(--background-color-inverse);
+    color: var(--color-text-primary-inverse);
+    border-radius: 10px;
+    font-size: x-large;
+    border: 0;
+
+}

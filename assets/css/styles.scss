@@ -1,5 +1,11 @@
 ---
 ---
 
-@import "main";
-@import "themes";
+@use "bootstrap";
+@use "themes";
+@use "sizes";
+@use "fonts";
+@use "main";
+@use "sidebar";
+@use "theme-toggle";
+@use "footer";

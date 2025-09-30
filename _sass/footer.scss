@@ -1,0 +1,32 @@
+#verdant-footer {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+#copyright-icon {
+    font-size: x-large;
+}
+
+.verdant-hr {
+    border: 1px solid;
+}
+
+.footer-content {
+    height: 36px;
+    padding: 0;
+}
+
+.footer-content>div>a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+.footer-content>div>a:hover {
+    color: var(--sidebar-connection-link-hover);
+    font-weight: bold;
+}
+
+.italic-link {
+    font-style: italic;
+}
