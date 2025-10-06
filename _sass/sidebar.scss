@@ -32,7 +32,6 @@
 
 #verdant-profile-header {
     margin: 8px 0px;
-
 }
 
 #verdant-profile-header>a {
@@ -51,6 +50,14 @@
     display: block;
     width: 6.5rem;
     height: 6.5rem;
+}
+
+#verdant-avatar>img {
+    transition: transform .3s;
+}
+
+#verdant-avatar>img:hover {
+    transform: scale(1.25);
 }
 
 #blog-name>h2 {
