@@ -98,3 +98,13 @@ a:hover .tag-pill {
     border: solid var(--background-color-inverse) 1px;
     border-radius: 15px;
 }
+
+p > code {
+    color: var(--color-code-markdown);
+}
+
+pre {
+    border: solid var(--sidebar-connection-link-hover) 1px;
+    border-radius: 5px;
+    padding: 3px 0px;
+}

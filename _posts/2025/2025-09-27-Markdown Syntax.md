@@ -112,7 +112,7 @@ To create a block quote add a \> in front of the text.
 
 `To mark text as code wrap it in backticks.`
 
-```
+```Example
 `To mark text as code wrap it in backticks.`
 ```
 
