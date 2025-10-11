@@ -14,7 +14,7 @@ plugins:
   - jekyll-archives
 
 url: "https://sandstormnick.github.io/"
-baseurl: "/Jekyll-Theme-Verdant"
+baseurl: "/Blog"
 
 exclude:
   - docker-compose.yml
