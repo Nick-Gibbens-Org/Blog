@@ -6,15 +6,15 @@ title: About
 
 Hello and welcome to my blog! My name is Nick Gibbens.
 
-We are constantly learning new things all the time. Some lessons are small while others feel like a life changing epiphany. Many of these lessons forget as quickly as we learned them. I've always wanted a place where I could "persist" some of my learned lessons. 
+We are constantly learning new things all the time. Some lessons are small while others feel like a life changing epiphany. Many of these lessons are forgotten as quickly as they are learned. I've always wanted a place where I could "persist" some of my learned lessons. 
 
-That's where this blog comes into play. As a software developer I'm picking up new things all the times. Some are as small as a handy bit of syntax. Others are grappling a complex framework, system, new technology, etc. that take far longer to get a grasp of. I want this blog to be a place that I can document some of these lessons I've learned so that they hopefully remain ingrained a lot longer. There's the added benefit of potentially teaching something to someone else who may happen to stumble upon this blog.
+That's where this blog comes into play. As a software developer I'm constantly picking up new things. Some are as small as a handy bit of syntax. Others are grappling a complex framework, system, new technology, etc. that take far longer to get a grasp of. I want this blog to be a place that I can document some of these lessons I've learned so that they hopefully remain ingrained a lot longer. There's the added benefit of potentially teaching something to someone else who may happen to stumble upon this blog.
 
 I won't profess to be a coding wizard but I do know somethings. I also can't guarantee that I won't make mistakes in what I post but I will do my best. It's also through our mistakes that we learn our greatest lessons.
 
-I plan for this blog to be akin to the Room of Requirement in Harry Potter. An amalgamation of all things programming and perhaps things that stray out of this domain.
+I plan for this blog to be akin to the Room of Requirement in Harry Potter. An amalgamation of all things programming and perhaps some things that stray out of this domain.
 
-If you're interested in starting your own blog feel free to fork this Jekyll theme or take inspiration and create your own Jekyll theme for your blog. 🌱
+If you're interested in starting your own blog feel free to fork this Jekyll theme or take inspiration and create your own theme for your blog. 🌱
 
 ---
 
