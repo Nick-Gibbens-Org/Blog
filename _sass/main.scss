@@ -11,6 +11,11 @@
     flex-direction: column;
 }
 
+.verdant-content ol,
+.verdant-content ul {
+    padding-left: 2rem;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--color-text-primary);
@@ -92,4 +97,27 @@ a:hover .tag-pill {
     color: var(--sidebar-connection-link-hover);
     border: solid var(--background-color-inverse) 1px;
     border-radius: 15px;
+}
+
+p > code {
+    color: var(--color-code-markdown);
+}
+
+pre {
+    border: solid var(--sidebar-connection-link-hover) 1px;
+    border-radius: 5px;
+    padding: 3px 0px;
+}
+
+table {
+    border-collapse: separate;
+    margin-bottom: 10px;
+}
+
+th {
+    border-bottom: solid var(--sidebar-connection-link-hover) 2px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--tr-even-color);
 }

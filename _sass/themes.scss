@@ -19,6 +19,10 @@
     --sidebar-background-color: hsla(36, 31%, 80%, 1);
     --sidebar-nav-link-active: hsla(36, 31%, 90%, 1);
     --sidebar-connection-link-hover: hsla(158, 23%, 18%, 1);
+
+    --color-code-markdown: #d63384;
+
+    --tr-even-color: hsla(36, 100%, 91%, 1);
 }
 
 [data-theme="dark"] {
@@ -42,4 +46,8 @@
     --sidebar-background-color: hsla(158, 35%, 18%, 1);
     --sidebar-nav-link-active: hsla(158, 23%, 18%, 1);
     --sidebar-connection-link-hover: hsla(36, 31%, 90%, 1);
+
+    --color-code-markdown: #39FF14 ;
+
+    --tr-even-color: hsla(158, 30%, 33%, 1);
 }
