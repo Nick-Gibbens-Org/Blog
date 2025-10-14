@@ -112,7 +112,7 @@ To create a block quote add a \> in front of the text.
 
 `To mark text as code wrap it in backticks.`
 
-```
+```Example
 `To mark text as code wrap it in backticks.`
 ```
 
@@ -150,10 +150,14 @@ To add a horizontal rule add three dashes on a line by themselves.
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 ```Example
 | Syntax      | Description |
 | ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 | Header      | Title       |
 | Paragraph   | Text        |
 ```
