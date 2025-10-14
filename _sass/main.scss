@@ -108,3 +108,16 @@ pre {
     border-radius: 5px;
     padding: 3px 0px;
 }
+
+table {
+    border-collapse: separate;
+    margin-bottom: 10px;
+}
+
+th {
+    border-bottom: solid var(--sidebar-connection-link-hover) 2px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--tr-even-color);
+}

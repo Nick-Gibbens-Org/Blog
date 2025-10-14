@@ -150,10 +150,14 @@ To add a horizontal rule add three dashes on a line by themselves.
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 ```Example
 | Syntax      | Description |
 | ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 | Header      | Title       |
 | Paragraph   | Text        |
 ```
