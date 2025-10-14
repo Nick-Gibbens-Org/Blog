@@ -19,6 +19,7 @@ baseurl: "/Blog"
 exclude:
   - docker-compose.yml
   - assets/images/attribution.txt
+  - "Future Learning/" 
 
 sass:
   quiet_deps: true
