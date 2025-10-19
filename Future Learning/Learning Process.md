@@ -19,6 +19,7 @@
 
 - Will it be simply reading docs, making a small application, etc.? 
 - How can you quantify that you have learned something?
+- Set up your git repository straight away and track the progress.
 
 ## How to document your learning?
 
