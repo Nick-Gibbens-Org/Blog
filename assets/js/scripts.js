@@ -12,10 +12,10 @@ function toggleSidebar() {
     var burgerMenu = document.getElementById('burger-menu');
     var overlay = document.getElementById('sidebar-overlay');
     
-    sidebar.classList.toggle('mobile-active');
+    sidebar.classList.toggle('sidebar-hidden');
     burgerMenu.classList.toggle('active');
     
-    if (sidebar.classList.contains('mobile-active')) {
+    if (sidebar.classList.contains('sidebar-hidden')) {
         overlay.style.display = 'block';
     } else {
         overlay.style.display = 'none';
@@ -36,20 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (overlay) {
         overlay.addEventListener('click', function() {
             var sidebar = document.getElementById('verdant-sidebar');
-            if (sidebar.classList.contains('mobile-active')) {
+            if (sidebar.classList.contains('sidebar-hidden')) {
                 toggleSidebar();
             }
         });
     }
     
-    // Close sidebar when clicking on sidebar links (for mobile navigation)
+    // Close sidebar when clicking on sidebar links (for small screen navigation)
     var sidebarLinks = document.querySelectorAll('#verdant-sidebar .nav-link');
     sidebarLinks.forEach(function(link) {
         link.addEventListener('click', function() {
-            // Only close on mobile (when burger menu is visible)
+            // Only close on small screens (when burger menu is visible)
             if (window.innerWidth <= 992) {
                 var sidebar = document.getElementById('verdant-sidebar');
-                if (sidebar.classList.contains('mobile-active')) {
+                if (sidebar.classList.contains('sidebar-hidden')) {
                     toggleSidebar();
                 }
             }
