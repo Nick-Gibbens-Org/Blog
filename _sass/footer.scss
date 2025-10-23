@@ -35,5 +35,10 @@
 @media only screen and (max-width: 600px) {
     .footer-content {
         flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    #verdant-footer hr {
+        margin-bottom: 0.5rem;
     }
 }
