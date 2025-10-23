@@ -29,6 +29,7 @@ title: Verdant
     {% endfor %}
 
     {% for post in site.posts limit: 3 %}
+    {% unless post.pinned %}
     <li>
         <div class="card">
             <a href="{{ post.url | relative_url }}">
@@ -46,5 +47,6 @@ title: Verdant
             </a>
         </div>
     </li>
+    {% endunless %}
     {% endfor %}
 </ul>
