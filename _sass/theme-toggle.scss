@@ -11,3 +11,10 @@
     font-size: x-large;
     border: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    #theme-toggle {
+        right: 0;
+        left: 1rem
+    }
+}
