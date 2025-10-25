@@ -23,6 +23,7 @@ function toggleSidebar() {
 }
 
 // Initialize burger menu functionality when DOM is loaded
+// And Scroll-to-top functionality
 document.addEventListener('DOMContentLoaded', function() {
     var burgerMenu = document.getElementById('burger-menu');
     var overlay = document.getElementById('sidebar-overlay');
@@ -55,4 +56,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Initialize scroll-to-top functionality
+    var scrollTopButton = document.getElementById("scroll-to-top");
+    
+    if (scrollTopButton) {
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function() {
+            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrollPosition > 200) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        });
+        
+        // Handle click to scroll to top
+        scrollTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
+
+
