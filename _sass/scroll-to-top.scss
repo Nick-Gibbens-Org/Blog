@@ -19,3 +19,10 @@
     background-color: var(--background-color-inverse);
     color: var(--color-text-primary-inverse);
 }
+
+@media only screen and (max-width: 600px) {
+    #scroll-to-top {
+        left: 1rem;
+        right: 0;
+    }
+}
