@@ -1,13 +1,9 @@
 ---
+description: Using :nth-child() pseudo-class to style alternating rows in tables.
 categories: [Quick reads]
-excerpt_separator: <!--end_excerpt-->
 post_title: nth-child Pseudo-class
 tags: [CSS]
 ---
-
-Using :nth-child() pseudo-class to style alternating rows in tables.
-
-<!--end_excerpt-->
 
 I was making some slight styling changes to a table element recently. There is a common trend to offset the colours between alternating rows in a table. I wanted to follow this norm. It's an easy way for readers to differentiate between the rows in a table. I wanted an easy solution for this trivial matter. A quick search lead me to `:nth-child()` which is one of many CSS pseudo-classes.
 
