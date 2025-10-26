@@ -1,13 +1,9 @@
 ---
+description: I recently heard about some Garmin / Strava drama. As a user of both their software and a Garmin watch owner I read a little bit into it.
 categories: [Opinion]
-excerpt_separator: <!--end_excerpt-->
 post_title: Garmin Strava Drama
 tags: [Garmin, Strava]
 ---
-
-I recently heard about some Garmin / Strava drama. As a user of both their software and a Garmin watch owner I read a little bit into it.
-
-<!--end_excerpt-->
 
 I am a fairly avid runner. I do several runs a week and have completed just under 10 marathons (including 3 ultra marathons). So, it goes without saying that I would make use of fitness software and fitness devices. Strava and Garmin are the main companies whose products and services I use. Therefore my interest was piqued when I heard there was some drama brewing between the two companies (Side note: I happened to hear about this from a friend while on a run. While running a lot of the conversation also tends to revolve around the world of running). It's rather a niche bit of drama. The majority of people who will be interested in the developments will be runners, cyclists, walkers, etc. who make use of these services and devices. I think both are impressive companies and hold a significant space in the fitness world. Despite using their products on a daily basis I'd never thought much about the legal affairs that take place behind the scenes.
 

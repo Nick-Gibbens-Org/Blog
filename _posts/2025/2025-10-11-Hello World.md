@@ -1,12 +1,8 @@
 ---
-excerpt_separator: <!--end_excerpt-->
+description: My first tentative steps into blogging using Jekyll's static site generation.
 post_title: Hello World
 tags: [Jekyll]
 ---
-
-My first tentative steps into blogging using Jekyll's static site generation.
-
-<!--end_excerpt-->
 
 Creating a blog to share my random thoughts and bits of knowledge I pick up along the way has always been something I've wanted to do. There are many great blogging platforms and existing blog themes that already exist. I debated about simply signing up with an existing platform and then deploying my posts into the chasm that is the internet. One of the things that held me back from going down this route is that I wanted to physically own (so to speak) the content that get added to these posts. Sure, I could create a text file first and then simply upload the content into the form that generates the posts, that content would then get persisted into a database, and I could change it as I saw fit. But what if I somehow deleted the files and lost access to the platform that hosted my posts. A hypothetical and probably unlikely scenario but I felt that I wanted to "own my words". This is a phrase I have to attribute to Scott Hanselman. I heard him describing this on one of his podcasts in an episode that he was discussing blogging. So, I looked around. Browsed the web for some solution. That's when I learned about something called Jekyll. A static site generator that used Markdown and HTML to convert files into posts that anyone can read online. It sounded exactly like what I was looking for. It required no database, no costs, and I could also use GitHub Pages to host it for free (either with the default Pages domain or a custom one if I wanted to).
 
