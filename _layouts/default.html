@@ -9,6 +9,7 @@
         <script src="{{ "/assets/js/theme-init.js" | prepend: site.baseurl }}"></script>
         <link rel="stylesheet" href={{ "/assets/css/styles.css" | prepend: site.baseurl }}>
         <script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/assets/js/toc.js" | prepend: site.baseurl }}"></script>
         <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}">
         <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
     </head>
@@ -16,14 +17,12 @@
         {% include theme-toggle.html %}
         {% include scroll-to-top.html %}
 
-        <!-- Burger menu for mobile -->
         <div id="burger-menu">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
         </div>
 
-        <!-- Sidebar overlay for mobile -->
         <div id="sidebar-overlay"></div>
 
         {% include sidebar.html %}
