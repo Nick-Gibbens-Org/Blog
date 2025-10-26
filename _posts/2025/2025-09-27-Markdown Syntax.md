@@ -1,31 +1,31 @@
 ---
 categories: [Demo, How To]
+description: Markdown is a lightweight markup language used for creating formatted text using plain text. This post contains all the basic Markdown syntax you will need.
 excerpt_separator: <!--end_excerpt-->
 post_title: Markdown Syntax
 tags: [Markdown, Syntax]
 ---
 
-Markdown is a lightweight markup language used for creating formatted text using plain text. This post contains all the basic Markdown syntax you will need.
-
-<!--end_excerpt-->
-
 Markdown was created by John Gruber in 2004 as an easy-to-read markup language. It is a popular and widely used markup language. Most repositories have a README.md file in their root which are used to give quick and easy information about the repository in question. A markup language is a text-encoding system which follows rules to format the display of the base text.
 
 To display Markdown, the client (website, app, GitHub, Discord, etc.) must parse the plain text using a parser (some library that knows the Markdown rules). This parser transforms it into another format. Usually this is into HTML but it can be other structured formats such as rich text. Markdown itself isn’t a single strict standard. There's Gruber's *vanilla* Markdown but also other *flavors* such as GitHub Flavored Markdown (GFM), CommonMark, etc. That’s why Markdown doesn’t always look the same everywhere.
 
----
-
 ## Headings
 
 ## H2 - heading
+{: data-toc-skip='' }
 
 ### H3 - heading
+{: data-toc-skip='' }
 
 #### H4 - heading
+{: data-toc-skip='' }
 
 ##### H5 - heading
+{: data-toc-skip='' }
 
 ###### H6 - heading
+{: data-toc-skip='' }
 
 ```Example
 # For an example of H1 view the heading of this post. 
@@ -84,7 +84,9 @@ To create a block quote add a \> in front of the text.
 > The second paragraph.
 ```
 
-## Ordered Lists
+## Lists
+
+### Ordered Lists
 
 1. The first item in an ordered list.
 2. Item 2.
@@ -96,7 +98,7 @@ To create a block quote add a \> in front of the text.
 3. Item 3.
 ```
 
-## Unordered Lists
+### Unordered Lists
 
 - The first item in an unordered list.
 - Item 2.

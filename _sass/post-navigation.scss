@@ -1,0 +1,109 @@
+.post-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.post-nav-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.post-nav-content {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    
+    &.collapsed {
+        max-height: 0;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-item {
+    margin: 0;
+    
+    &.toc-h2 {
+        margin-top: 0.2rem;
+        
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        .toc-link {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+    
+    &.toc-h3,
+    &.toc-h4,
+    &.toc-h5,
+    &.toc-h6 {
+        display: none; // Hidden by default
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        font-size: 0.85rem;
+        margin-top: 0.2rem;
+    }
+    
+    &.toc-h3 {
+        margin-left: 1.5rem;
+    }
+    
+    &.toc-h4 {
+        margin-left: 2.5rem;
+    }
+    
+    &.toc-h5 {
+        margin-left: 3.5rem;
+    }
+    
+    &.toc-h6 {
+        margin-left: 4.5rem;
+    }
+}
+
+// Show nested items when they have the show-nested class applied by JavaScript
+.toc-item.show-nested {
+    display: block !important;
+    opacity: 1 !important;
+    max-height: 3rem !important;
+}
+
+.toc-link {
+    display: block;
+    color: var(--color-text-secondary, #668);
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+    
+    &:hover {
+        color: var(--color-text-primary);
+        background-color: var(--color-bg-hover, rgba(0, 0, 0, 0.05));
+        text-decoration: none;
+    }
+    
+    &.active {
+        background-color: var(--color-primary-bg, rgba(0, 255, 123, 0.1));
+        color: var(--color-text-primary);
+        padding-left: calc(0.5rem - 3px);
+        font-weight: 500;
+    }
+}

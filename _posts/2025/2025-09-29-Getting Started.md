@@ -1,14 +1,11 @@
 ---
 categories: [How To, Tutorial]
+description: A guide to quickly get the Jekyll Verdant theme up and running.
 excerpt_separator: <!--end_excerpt-->
 pinned: true
 post_title: Getting Started
 tags: [Docker]
 ---
-
-A guide to quickly get the Jekyll Verdant theme up and running.
-
-<!--end_excerpt-->
 
 The theme utilizes Docker Compose to run a container built from the necessary image for local development. This means you just need to use one command to get it running locally.
 
