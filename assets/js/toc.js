@@ -1,10 +1,12 @@
 // Table of Contents functionality for Jekyll posts
 document.addEventListener('DOMContentLoaded', function() {
-    // Only run on post pages
-    if (!document.querySelector('.verdant-content h1')) return;
-    
+    // Only run on post pages - check for required elements
     const tocContainer = document.getElementById('toc');
     const postNavigation = document.getElementById('post-navigation');
+    const contentArea = document.querySelector('.verdant-content');
+    
+    // Exit early if we're not on a post page or missing required elements
+    if (!contentArea || !tocContainer || !postNavigation) return;
     
     // Find all headers (h2-h6) in the content area, excluding h1 (post title)
     const allHeaders = document.querySelectorAll('.verdant-content h2, .verdant-content h3, .verdant-content h4, .verdant-content h5, .verdant-content h6');
