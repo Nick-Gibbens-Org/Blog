@@ -1,14 +1,13 @@
-<div id="post-navigation" class="post-nav-container">
+<div id="post-navigation">
     <div class="post-nav-header">
         <h4><i class="fas fa-list"></i> Table of Contents</h4>
-        <button id="toggle-nav" class="nav-toggle-btn">
-            <i class="fas fa-chevron-up"></i>
-        </button>
     </div>
     <nav id="toc" class="post-nav-content">
         <!-- Navigation will be dynamically generated here -->
     </nav>
 </div>
+
+<!-- Move the Script to a Script file! NB -->
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -19,7 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const postNavigation = document.getElementById('post-navigation');
     
     // Find all headers (h2-h6) in the content area, excluding h1 (post title)
-    const headers = document.querySelectorAll('.verdant-content h2, .verdant-content h3, .verdant-content h4, .verdant-content h5, .verdant-content h6');
+    const allHeaders = document.querySelectorAll('.verdant-content h2, .verdant-content h3, .verdant-content h4, .verdant-content h5, .verdant-content h6');
+    
+    // Filter out headers with data-toc-skip attribute
+    const headers = Array.from(allHeaders).filter(header => !header.hasAttribute('data-toc-skip'));
     
     if (headers.length === 0) {
         postNavigation.style.display = 'none';
@@ -33,15 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     headers.forEach((header, index) => {
         // Get or create ID for the header
         let headerId = header.id;
-        if (!headerId) {
-            // Create ID from header text if it doesn't exist
-            headerId = header.textContent.toLowerCase()
-                .replace(/[^\w\s-]/g, '') // Remove special characters
-                .replace(/\s+/g, '-') // Replace spaces with hyphens
-                .replace(/-+/g, '-') // Replace multiple hyphens with single
-                .trim();
-            header.id = headerId;
-        }
         
         // Create navigation item
         const listItem = document.createElement('li');
@@ -185,21 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     window.addEventListener('scroll', onScroll);
-    
-    // Toggle navigation visibility
-    const toggleBtn = document.getElementById('toggle-nav');
-    const navContent = document.getElementById('toc');
-    
-    toggleBtn.addEventListener('click', function() {
-        const isCollapsed = navContent.classList.toggle('collapsed');
-        const icon = toggleBtn.querySelector('i');
-        
-        if (isCollapsed) {
-            icon.className = 'fas fa-chevron-down';
-        } else {
-            icon.className = 'fas fa-chevron-up';
-        }
-    });
     
     // Initial active state
     updateActiveNavItem();

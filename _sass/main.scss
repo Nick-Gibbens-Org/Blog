@@ -28,6 +28,14 @@
     font-size: 20px;
 }
 
+.post-navigation-sidebar {
+    padding: 1rem 2rem;
+    position: fixed;
+    right: 0;
+    top: 2rem;
+    width: 255px;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--color-text-primary);
@@ -133,6 +141,10 @@ tr:nth-child(even) {
 @media only screen and (max-width: 1200px) {
     .verdant-content {
         margin: 0px 50px 0px 255px;
+    }
+
+    .post-navigation-sidebar {
+        display: none;
     }
 }
 

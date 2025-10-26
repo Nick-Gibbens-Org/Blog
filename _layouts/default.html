@@ -28,19 +28,17 @@
 
         {% include sidebar.html %}
 
-        <div class="main-content-wrapper">
-            <div class="verdant-content">
-                <div class="row">
-                    {{ content }}
-                </div>
-                {% include footer.html %}
+        <div class="verdant-content">
+            <div class="row">
+                {{ content }}
             </div>
-            
-            {% if page.layout == 'post' %}
-            <aside class="post-navigation-sidebar">
-                {% include post-navigation.html %}
-            </aside>
-            {% endif %}
+            {% include footer.html %}
         </div>
+        
+        {% if page.layout == 'post' %}
+        <aside class="post-navigation-sidebar">
+            {% include post-navigation.html %}
+        </aside>
+        {% endif %}
     </body>
 </html>

@@ -13,14 +13,19 @@ To display Markdown, the client (website, app, GitHub, Discord, etc.) must parse
 ## Headings
 
 ## H2 - heading
+{: data-toc-skip='' }
 
 ### H3 - heading
+{: data-toc-skip='' }
 
 #### H4 - heading
+{: data-toc-skip='' }
 
 ##### H5 - heading
+{: data-toc-skip='' }
 
 ###### H6 - heading
+{: data-toc-skip='' }
 
 ```Example
 # For an example of H1 view the heading of this post. 
@@ -79,7 +84,9 @@ To create a block quote add a \> in front of the text.
 > The second paragraph.
 ```
 
-## Ordered Lists
+## Lists
+
+### Ordered Lists
 
 1. The first item in an ordered list.
 2. Item 2.
@@ -91,7 +98,7 @@ To create a block quote add a \> in front of the text.
 3. Item 3.
 ```
 
-## Unordered Lists
+### Unordered Lists
 
 - The first item in an unordered list.
 - Item 2.
