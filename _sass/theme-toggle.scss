@@ -1,7 +1,7 @@
 #theme-toggle {
-    position: absolute;
-    left: 96%;
-    top: 93%;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
 }
 
 #theme-toggle>button {
@@ -10,5 +10,11 @@
     border-radius: 10px;
     font-size: x-large;
     border: 0;
+}
 
+@media only screen and (max-width: 600px) {
+    #theme-toggle {
+        right: 0;
+        left: 1rem
+    }
 }

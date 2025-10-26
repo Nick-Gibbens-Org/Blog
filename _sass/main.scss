@@ -12,8 +12,28 @@
 }
 
 .verdant-content ol,
-.verdant-content ul {
+.verdant-content ul:not(#home-posts-list):not(#posts-list):not(#categories-list):not(#category-list):not(#tag-list) {
     padding-left: 2rem;
+}
+
+.h2-capitalize {
+    text-transform: capitalize;
+}
+
+.list-post-details {
+    display: flex;
+}
+
+.list-post-details i {
+    font-size: 20px;
+}
+
+.post-navigation-sidebar {
+    padding: 1rem 2rem;
+    position: fixed;
+    right: 0;
+    top: 2rem;
+    width: 255px;
 }
 
 body {
@@ -79,10 +99,6 @@ blockquote>p {
     border: 0;
 }
 
-#home-posts-list .fa-thumbtack {
-    margin-left: 10px;
-}
-
 .tag-pill {
     background-color: forestgreen;
     border-radius: 15px;
@@ -99,7 +115,7 @@ a:hover .tag-pill {
     border-radius: 15px;
 }
 
-p > code {
+code {
     color: var(--color-code-markdown);
 }
 
@@ -120,4 +136,31 @@ th {
 
 tr:nth-child(even) {
     background-color: var(--tr-even-color);
+}
+
+@media only screen and (max-width: 1200px) {
+    .verdant-content {
+        margin: 0px 50px 0px 255px;
+    }
+
+    .post-navigation-sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .verdant-content {
+        margin: 0px 50px 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .list-post-details {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .verdant-content {
+        margin: 0px 0px 0px 50px;
+    }
 }
