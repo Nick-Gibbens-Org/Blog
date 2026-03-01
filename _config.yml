@@ -14,16 +14,17 @@ plugins:
   - jekyll-archives
 
 url: "https://sandstormnick.github.io/"
-baseurl: "/Jekyll-Theme-Verdant"
+baseurl: "/Blog"
 
 exclude:
   - docker-compose.yml
   - assets/images/attribution.txt
+  - "Future Learning/" 
 
 sass:
   quiet_deps: true
   load_paths:
-    - /home/runner/work/Jekyll-Theme-Verdant/Jekyll-Theme-Verdant/vendor/bundle/ruby/3.1.0/gems/bootstrap-5.3.8/assets/stylesheets
+    - /home/runner/work/Blog/Blog/vendor/bundle/ruby/3.1.0/gems/bootstrap-5.3.8/assets/stylesheets
 
 jekyll-archives:
   enabled:
