@@ -138,6 +138,16 @@ To add a horizontal rule add three dashes on a line by themselves.
 ---
 ```
 
+## Images
+
+![Image Name]({{ "/assets/images/Spaceman-blue.png" | relative_url }}){:class="image-border image-max-width"}
+
+To add styling to your image create CSS and append it at the end of the image markdown with the following syntax: `{:class="ClassA ClassB"}`
+
+```
+{% raw %}![Image Name]({{ "/assets/images/Spaceman-blue.png" | relative_url }}){:class="image-border image-max-width"}{% endraw %}
+```
+
 ## Links
 
 [A link to further Markdown syntax](https://www.markdownguide.org/)
