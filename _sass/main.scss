@@ -16,10 +16,6 @@
     padding-left: 2rem;
 }
 
-.h2-capitalize {
-    text-transform: capitalize;
-}
-
 .list-post-details {
     display: flex;
 }
@@ -138,6 +134,20 @@ tr:nth-child(even) {
     background-color: var(--tr-even-color);
 }
 
+.image-border {
+  padding: 10px;
+  border: 5px solid #ccc;
+  margin-bottom: 15px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-max-width {
+  max-width: 25%;
+}
+
 @media only screen and (max-width: 1200px) {
     .verdant-content {
         margin: 0px 50px 0px 255px;
@@ -151,6 +161,12 @@ tr:nth-child(even) {
 @media only screen and (max-width: 992px) {
     .verdant-content {
         margin: 0px 50px 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image-max-width {
+        max-width: 50%;
     }
 }
 
