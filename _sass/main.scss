@@ -144,8 +144,20 @@ tr:nth-child(even) {
   margin-right: auto;
 }
 
-.image-max-width {
+.image-max-width-25 {
   max-width: 25%;
+}
+
+.image-max-width-50 {
+  max-width: 50%;
+}
+
+.image-max-width-75 {
+  max-width: 75%;
+}
+
+.image-max-width-100 {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
