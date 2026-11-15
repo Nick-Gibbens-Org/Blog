@@ -45,7 +45,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        # The Bootstrap Sass path depends on the Ruby and Bootstrap versions,
+        # so it is looked up from the installed gem instead of hardcoded in _config.yml
+        run: |
+          printf 'sass:\n  quiet_deps: true\n  load_paths:\n    - %s/assets/stylesheets\n' "$(bundle info bootstrap --path)" > _config_ci.yml
+          bundle exec jekyll build --config _config.yml,_config_ci.yml --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
