@@ -23,8 +23,7 @@ exclude:
 
 sass:
   quiet_deps: true
-  load_paths:
-    - /home/runner/work/Blog/Blog/vendor/bundle/ruby/3.1.0/gems/bootstrap-5.3.8/assets/stylesheets
+  # The Bootstrap load path is added by the GitHub Actions workflow (.github/workflows/jekyll.yml)
 
 jekyll-archives:
   enabled:
